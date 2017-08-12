@@ -1,6 +1,6 @@
 # ignore all 
 *
 # but not directories which names starting with a dot
-!/.*/
+!/.*/*
 # but not files which names starting with a dot
 !/.*
