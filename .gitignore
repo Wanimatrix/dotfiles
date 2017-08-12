@@ -4,3 +4,6 @@
 !/.*/**
 # but not files which names starting with a dot
 !/.*
+# ignore all keepass DBs
+**.kdbx
+**.kdbx.lock
