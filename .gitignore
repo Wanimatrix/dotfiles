@@ -1,0 +1,4 @@
+# ignore all 
+*
+# but not directories which names starting with a dot
+!/.*/
