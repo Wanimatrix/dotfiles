@@ -1,0 +1,6 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = git@github.com:anishathalye/dotbot.git
+[submodule "vim/plugged/gruvbox"]
+	path = vim/plugged/gruvbox
+	url = git@github.com:morhetz/gruvbox.git

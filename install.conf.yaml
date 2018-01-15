@@ -1,0 +1,11 @@
+- link:
+        ~/.vimrc: vimrc
+        ~/.vim: 
+                relink: true
+                path: vim
+        ~/.zshrc: zshrc
+        ~/.oh-my-zsh: oh-my-zsh
+
+
+- shell:
+        - [git submodule update --init --recursive, Installing submodules]

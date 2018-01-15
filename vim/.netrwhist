@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='ftp://perusica.be@ftp.perusica.be/modules/'
+let g:netrw_dirhist_2='ftp://perusica.be@ftp.perusica.be/modules/lang.mod/'
+let g:netrw_dirhist_3='ftp://perusica.be@ftp.perusica.be//'
+let g:netrw_dirhist_4='ftp://perusica.be@ftp.perusica.be//modules/'
+let g:netrw_dirhist_5='ftp://perusica.be@ftp.perusica.be//modules/lang.mod/'
+let g:netrw_dirhist_6='/home/wouter/Development/kotnetcli/kotnetcli.egg-info'
+let g:netrw_dirhist_7='/home/wouter/Development/kotnetcli/kotnetcli/data'
+let g:netrw_dirhist_8='/home/wfranken/.vim/after'
