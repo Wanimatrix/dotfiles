@@ -4,3 +4,24 @@
 [submodule "vim/plugged/gruvbox"]
 	path = vim/plugged/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
+[submodule "nerdcommenter"]
+	path = vim/plugged/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "nerdtree"]
+	path = vim/plugged/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim-airline"]
+	path = vim/plugged/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim-multiple-cursors"]
+	path = vim/plugged/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "vim-nerdtree-tabs"]
+	path = vim/plugged/vim-nerdtree-tabs
+	url = git@github.com:jistr/vim-nerdtree-tabs.git
+[submodule "vim-sensible"]
+	path = vim/plugged/vim-sensible
+	url = git@github.com:tpope/vim-sensible.git
