@@ -1,3 +1,6 @@
 [core]
 	autocrlf = input
 	whitespace = cr-at-eol
+[user]
+	name = Ẃouter Franken
+	email = wouter.franken@essensium.com
