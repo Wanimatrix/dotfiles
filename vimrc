@@ -4,3 +4,4 @@ source ~/.vim/before.vim
 " Load plugins
 source ~/.vim/plugins.vim
 
+source ~/.vim/after/after.vim

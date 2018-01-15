@@ -21,8 +21,12 @@ Plug 'morhetz/gruvbox'
 " Multiple cursors
 Plug 'terryma/vim-multiple-cursors'
 
+" Fuzzy search
+Plug 'kien/ctrlp.vim'
+
 call plug#end()
 
 " Plugin configuration
 colorscheme gruvbox
 nnoremap <C-p> :NERDTreeTabsToggle<CR>
+let g:ctrlp_map = '<c-f>'
