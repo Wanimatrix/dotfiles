@@ -44,6 +44,13 @@ set termguicolors
 
 let mapleader= ","
 
+
+" Set color on column 80
+set cc=80
+
+" Turn on c space errors for all c files
+autocmd BufNewFile,BufRead *.c let c_space_errors=1
+
 " Easy edit vim config
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>ebv :vsplit ~/.vim/before.vim<cr>

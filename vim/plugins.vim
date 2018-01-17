@@ -10,7 +10,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 
 " NerdCommenter
-Plug 'scrooloose/nerdcommenter', { 'on': 'NERDTreeTabsToggle' }  
+Plug 'scrooloose/nerdcommenter'  
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -22,7 +22,10 @@ Plug 'morhetz/gruvbox'
 Plug 'terryma/vim-multiple-cursors'
 
 " Fuzzy search
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+
+" Refactoring
+Plug 'LucHermitte/vim-refactor'
 
 call plug#end()
 
@@ -30,3 +33,5 @@ call plug#end()
 colorscheme gruvbox
 nnoremap <C-p> :NERDTreeTabsToggle<CR>
 let g:ctrlp_map = '<c-f>'
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 40
