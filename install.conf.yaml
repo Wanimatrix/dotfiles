@@ -6,9 +6,9 @@
         ~/.zshrc: zshrc
         ~/.oh-my-zsh: oh-my-zsh
         ~/.scripts: scripts
-
+        .git/hooks: 
+                force: true
+                path: git-hooks
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
-        - command: echo PATH=\$PATH:~/.scripts >> zshrc
-          description: Adding scripts dir to path

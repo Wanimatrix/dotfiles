@@ -56,11 +56,3 @@ nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>ebv :vsplit ~/.vim/before.vim<cr>
 nnoremap <leader>evp :vsplit ~/.vim/plugins.vim<cr>
 nnoremap <leader>eav :vsplit ~/.vim/after.vim<cr>
-
-" Setup cscope update commands 
-nmap <leader><F11> :!find . -iname '*.h' -o -iname '*.c' > cscope.files<CR>
-  \:!cscope -b -q -i cscope.files -f cscope.out<CR>
-  \:cs reset<CR>
-nmap <leader>k<F11> :!find . -iname '*.h' -o -iname '*.c' > cscope.files<CR>
-  \:!cscope -b -k -q -i cscope.files -f cscope.out<CR>
-  \:cs reset<CR>
