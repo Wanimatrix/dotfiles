@@ -6,7 +6,7 @@ exec < /dev/tty
 echo "Do you wish to update all submodules?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) git submodule update --recursive --remote; break;;
+        Yes ) git submodule update --recursive --remote; git add .; break;;
         No ) exit;;
     esac
 done
