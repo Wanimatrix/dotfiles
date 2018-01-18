@@ -1,0 +1,5 @@
+#!/bin/bash
+#gentagdb database build script
+# Source: https://www.fsl.cs.sunysb.edu/~rick/cscope.html
+cscope -bq cscope.files
+ctags -L cscope.files

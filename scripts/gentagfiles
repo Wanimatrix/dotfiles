@@ -1,0 +1,22 @@
+#!/bin/bash
+#gentagfiles file list build script
+# Source: https://www.fsl.cs.sunysb.edu/~rick/cscope.html
+set -x
+
+touch cscope.files
+if [ $# -ge 1 ]
+then
+	for GENTAG_ARCH in ${@:1}
+	do
+		find | grep "\.c$\|\.h$" | grep "\.\/arch\/$GENTAG_ARCH\/" > cscope.files
+	done
+fi
+
+find | grep "\.c$\|\.h$" | grep "\.\/fs" >> cscope.files
+find | grep "\.c$\|\.h$" | grep "\.\/mm" >> cscope.files
+find | grep "\.c$\|\.h$" | grep "\.\/include" >> cscope.files
+find | grep "\.c$\|\.h$" | grep "\.\/kernel" >> cscope.files
+find | grep "\.c$\|\.h$" | grep "\.\/block" >> cscope.files
+find | grep "\.c$\|\.h$" | grep "\.\/lib" >> cscope.files
+sort cscope.files > cscope.files.sorted
+mv cscope.files.sorted cscope.files

@@ -113,3 +113,4 @@ fi
 
 # Add local bin to PATH
 PATH=/home/wfranken/.local/bin:$PATH
+PATH=$PATH:~/.scripts

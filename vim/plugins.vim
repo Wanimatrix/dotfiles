@@ -30,8 +30,15 @@ Plug 'LucHermitte/vim-refactor'
 call plug#end()
 
 " Plugin configuration
+
+"" Themeing
 colorscheme gruvbox
+
+"" NERDTree
 nnoremap <C-p> :NERDTreeTabsToggle<CR>
+nnoremap <leader>fit :NERDTreeFind<cr>
+
+"" CtrlP
 let g:ctrlp_map = '<c-f>'
 let g:ctrlp_max_files = 0
 let g:ctrlp_max_depth = 40
