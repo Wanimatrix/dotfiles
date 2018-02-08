@@ -1,0 +1,4 @@
+#!/bin/bash
+
+. $HOME/.scripts/kgentagfiles ${@:1}
+. $HOME/.scripts/kgentagdb

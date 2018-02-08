@@ -1,0 +1,8 @@
+#!/bin/bash
+#gentagfiles file list build script
+# Source: https://www.fsl.cs.sunysb.edu/~rick/cscope.html
+set -x
+
+find | grep "\.c$\|\.h$" > cscope.files
+sort cscope.files > cscope.files.sorted
+mv cscope.files.sorted cscope.files
