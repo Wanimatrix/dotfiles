@@ -31,3 +31,6 @@
 [submodule "vim/plugged/vim-refactor"]
 	path = vim/plugged/vim-refactor
 	url = https://github.com/LucHermitte/vim-refactor.git
+[submodule "vim/plugged/vim-autotag"]
+	path = vim/plugged/vim-autotag
+        url = https://github.com/craigemery/vim-autotag.git

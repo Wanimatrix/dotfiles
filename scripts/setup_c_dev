@@ -1,4 +1,4 @@
 #!/bin/bash
 
-. $HOME/.scripts/gentagfiles
-. $HOME/.scripts/gentagdb
+. $HOME/.scripts/private/gentagfiles
+. $HOME/.scripts/private/gentagdb
