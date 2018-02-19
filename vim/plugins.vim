@@ -34,6 +34,12 @@ Plug 'craigemery/vim-autotag'
 " Plug 'erig0/cscope_dynamic', {'on', 'LoadCscope', 'for': ['c', 'cpp']}
 " Plug 'erig0/cscope_dynamic'
 
+" Fuzzy finder
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Use ack search in vim
+Plug 'mileszs/ack.vim'
+
 call plug#end()
 
 " Plugin configuration
@@ -89,3 +95,9 @@ endif
     "execute "redrawstatus!"
 "endfunction
 "call Cscope_dynamic_update_hook(0)
+
+"" Ack.vim
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>

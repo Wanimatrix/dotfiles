@@ -114,8 +114,15 @@ fi
 # Add local bin to PATH
 PATH=$HOME/.local/bin:$PATH
 PATH=$PATH:~/.scripts
+PATH=$PATH:~/.fzf/bin
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f'
+
+echo "tags" > ~/.ignore
+alias ag='ag --path-to-ignore ~/.ignore'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source ~/.local_zshrc
+
