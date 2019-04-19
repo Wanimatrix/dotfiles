@@ -3,6 +3,9 @@ call plug#begin()
 " A default vim configuration
 Plug 'tpope/vim-sensible'
 
+" Automatic indentation type detection
+Plug 'tpope/vim-sleuth'
+
 " NerdTree
 Plug 'scrooloose/nerdtree'  
 
@@ -25,10 +28,20 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Refactoring
+Plug 'vim-scripts/VFT--VIM-Form-Toolkit'
+Plug 'LucHermitte/lh-vim-lib', { 'tag': '*' }
+Plug 'LucHermitte/lh-tags', { 'tag': '*' }
+Plug 'LucHermitte/lh-style', { 'tag': '*' }
+Plug 'LucHermitte/lh-dev', { 'tag': '1.6.2' }
+Plug 'LucHermitte/lh-brackets', { 'tag': '*' }
+Plug 'LucHermitte/mu-template', { 'tag': '*' }
 Plug 'LucHermitte/vim-refactor'
 
 " Update ctags on save
 Plug 'craigemery/vim-autotag'
+
+" Rtags
+Plug 'lyuts/vim-rtags'
 
 " Auto update cscope
 " Plug 'erig0/cscope_dynamic', {'on', 'LoadCscope', 'for': ['c', 'cpp']}
@@ -40,6 +53,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Use ack search in vim
 Plug 'mileszs/ack.vim'
 
+" Ctrl-P
+Plug 'kien/ctrlp.vim'
+
 call plug#end()
 
 " Plugin configuration
@@ -50,6 +66,8 @@ colorscheme gruvbox
 "" NERDTree
 nnoremap <C-p> :NERDTreeTabsToggle<CR>
 nnoremap <leader>fit :NERDTreeFind<cr>
+
+"" NerdCommenter
 
 "" CtrlP
 let g:ctrlp_map = '<c-f>'
@@ -101,3 +119,10 @@ endif
 let g:ackprg = 'ag --nogroup --nocolor --column'
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+"" Ctags
+"map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+"map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>

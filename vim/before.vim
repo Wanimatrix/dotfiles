@@ -34,6 +34,7 @@ set pastetoggle=<F11>
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set shiftwidth=4
 set softtabstop=4
+set tabstop=4
 set expandtab
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
@@ -43,6 +44,9 @@ map Y y$
 set termguicolors
 
 let mapleader= ","
+
+set list
+set listchars=eol:⏎,tab:――,nbsp:⎵,space:·
 
 
 " Set color on column 80
@@ -56,3 +60,6 @@ nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>ebv :vsplit ~/.vim/before.vim<cr>
 nnoremap <leader>evp :vsplit ~/.vim/plugins.vim<cr>
 nnoremap <leader>eav :vsplit ~/.vim/after.vim<cr>
+
+" Easy delete parameter form function
+"nnoremap <leader>cdp F,lvt,
