@@ -11,4 +11,7 @@
                 path: git-hooks
 
 - shell:
+        - [touch ~/.local_aliases, Create local aliases file]
+        - [touch ~/.local_zshrc, Create local Zshrc]
         - [git submodule update --init --recursive, Installing submodules]
+        - [vim +PlugInstall +qall!, Installing vim plugins]
