@@ -84,6 +84,7 @@ source ~/.local_aliases
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias vim="vi"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Fix Ctrl-Arrow keys
